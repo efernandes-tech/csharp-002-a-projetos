@@ -28,5 +28,15 @@ namespace CaixaEletronico
 
             MessageBox.Show("O saldo da conta " + numeroDaConta + " é " + saldoAposSaque);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Conta c = new Conta();
+            c.numero = 1;
+            c.titular = "Victor";
+            c.saldo = 100.0;
+
+            MessageBox.Show(c.titular);
+        }
     }
 }
