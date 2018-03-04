@@ -12,5 +12,11 @@ namespace CaixaEletronico3
         public string cpf;
         public string rg;
         public string endereco;
+        public int idade;
+
+        public bool EhMaiorDeIdade()
+        {
+            return this.idade >= 18;
+        }
     }
 }
