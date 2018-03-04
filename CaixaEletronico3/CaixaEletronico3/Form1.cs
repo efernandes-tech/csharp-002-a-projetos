@@ -19,15 +19,14 @@ namespace CaixaEletronico3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Cliente victor = new Cliente();
-            victor.nome = "victor";
+            Conta conta = new Conta();
 
-            Conta umaConta = new Conta();
-            umaConta.cliente = victor;
+            Cliente cliente = new Cliente();
+            cliente.nome = "Victor";
 
-            umaConta.cliente.rg = "12345678-9";
+            conta.titular = cliente;
 
-            MessageBox.Show(umaConta.cliente.nome);
+            MessageBox.Show(conta.titular.nome); // Mostra Victor no MessageBox.
         }
     }
 }

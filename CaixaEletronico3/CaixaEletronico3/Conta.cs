@@ -11,7 +11,7 @@ namespace CaixaEletronico3
         public int numero;
         public double saldo;
 
-        public Cliente cliente;
+        public Cliente titular;
 
         public void Deposita(double valorASerDepositado)
         {
